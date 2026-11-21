@@ -3,7 +3,7 @@ package com.sirens.visuals;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
+import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.minecraft.client.KeyMapping;
@@ -14,7 +14,7 @@ public class SirensVisuals implements ClientModInitializer {
     public static KeyMapping MENU, ZOOM, EMOTE, FULLBRIGHT, HIDEHUD, PLAY, NEXT, PREV;
 
     static KeyMapping reg(String name, int key) {
-        return KeyMappingHelper.registerKeyMapping(new KeyMapping(name, InputConstants.Type.KEYSYM, key, KeyMapping.Category.MISC));
+        return KeyBindingHelper.registerKeyBinding(new KeyMapping(name, InputConstants.Type.KEYSYM, key, KeyMapping.Category.MISC));
     }
 
     @Override
