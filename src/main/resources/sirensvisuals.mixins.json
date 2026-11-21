@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "com.sirens.visuals.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["SwingMixin"],
+  "injectors": { "defaultRequire": 0 }
+}

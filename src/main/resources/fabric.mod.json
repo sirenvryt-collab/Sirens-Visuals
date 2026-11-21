@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "sirensvisuals",
+  "version": "${version}",
+  "name": "Sirens Visuals",
+  "description": "Visual mod: HUD, sky tint, YouTube Music lyrics, hit ripples, kill effects and more.",
+  "authors": ["Siren"],
+  "environment": "client",
+  "entrypoints": { "client": ["com.sirens.visuals.SirensVisuals"] },
+  "mixins": ["sirensvisuals.mixins.json"],
+  "depends": { "fabricloader": ">=0.16.0", "minecraft": "~1.21.11", "java": ">=21", "fabric-api": "*" }
+}
